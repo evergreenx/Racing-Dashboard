@@ -5,6 +5,15 @@ import { BiHomeAlt } from "react-icons/Bi";
 
 import { BiChevronDown } from "react-icons/Bi";
 
+import { GrAppsRounded } from "react-icons/Gr";
+
+import { IoCardOutline } from "react-icons/Io";
+
+
+
+
+
+
 
 import "./Sidear.css";
 
@@ -22,11 +31,26 @@ export default function index() {
                 <h3 className="font-bold text-sm text-[#3629B7] mb-4 ">Menu</h3>
 
                 <div className="links text-[#838383]">
-                    <div className="link flex items-center space-x-5 cursor-pointer ">
+                    <div className="link mb-7   flex items-center space-x-5 cursor-pointer ">
                         <BiHomeAlt className="icon" />
                         <span className="font-normal">Home</span>
                     </div>
+
+
+                    <div className="link  mb-7 flex items-center space-x-5 cursor-pointer ">
+                        <GrAppsRounded className="icon" />
+                        <span className="font-normal">Garage</span>
+                    </div>
+
+
+                    <div className="link  mb-7 flex items-center space-x-5 cursor-pointer ">
+                        <IoCardOutline className="icon" />
+                        <span className="font-normal">Garage</span>
+                    </div>
                 </div>
+
+
+
 
 
 
@@ -34,9 +58,9 @@ export default function index() {
 
             <div className="scheduled-races-container flex flex-col space-y-6 ">
 
-<h2 className="text-[#3629B7]" >
-Scheduled Races
-</h2>
+                <h2 className="text-[#3629B7]" >
+                    Scheduled Races
+                </h2>
 
                 <div className="race flex items-center space-x-5 ">
                     <p className="w-4 h-4 border border-[#3F7EF8] rounded-full">
