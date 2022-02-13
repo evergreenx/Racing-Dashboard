@@ -1,9 +1,18 @@
-.icon {
-  font-size: 27px;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
+.icon {
+  font-size: 22px;
 }
 
 .sidebar {
   /* background-color: aqua; */
   width: 240px;
+}
+
+@layer components {
+  .link {
+    @apply hover:shadow-2xl text-sm  mb-1 2xl:mb-7 flex items-center space-x-5 cursor-pointer hover:bg-[#3629B7] hover:text-white py-2 px-2 rounded;
+  }
 }
