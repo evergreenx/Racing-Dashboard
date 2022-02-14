@@ -4,10 +4,21 @@ import AboutRace from './AboutRace'
 
 export default function CenterContent() {
   return (
-    <div>
+    <div className='flex  '>
 
-      <CarCarousel />
-      <AboutRace />
+      <div className="flex-1 mr-20">
+        <CarCarousel />
+
+      </div>
+
+      <div className="
+      w-96
+">
+
+
+        <AboutRace />
+
+      </div>
 
     </div>
   )

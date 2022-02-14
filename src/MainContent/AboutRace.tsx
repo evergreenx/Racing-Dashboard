@@ -30,7 +30,7 @@ export default function index() {
     ]
 
     return (
-        <div>
+        <div className='w-full'>
 
 
             {

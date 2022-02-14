@@ -30,7 +30,7 @@ export default function Header() {
 
     ]
     return (
-        <div className='flex justify-around '>
+        <div className='flex justify-around mb-20 '>
 
 
             {

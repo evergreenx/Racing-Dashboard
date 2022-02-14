@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useSwipeable } from "react-swipeable";
+import { GrNext, GrPrevious } from "react-icons/gr";
+import Prev from '../image/prev.svg'
+import Next from '../image/next.svg'
+
 
 import "./Carousel.css";
 
@@ -58,6 +62,59 @@ const Carousel = ({ children }: MyComponentProps) => {
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
         >
+
+
+            <div className="controls flex justify-around">
+
+                <div className="">
+                <h1 className="text-black text-5xl">
+                    Infiniti Renault
+                    <sup className="text-xl mt-10">
+                        TM
+                    </sup>
+                </h1>
+            
+
+                </div>
+               
+                <div className="indicators mb-10 flex space-x-5">
+                    <button
+                        onClick={() => {
+                            updateIndex(activeIndex - 1);
+                        }}
+
+                        className="bg-[#FEFEFF] flex items-center justify-center  text-[#9BA6B2] text-xl shadow-2xl  shadow-yellow-800 w-14 h-14 p-3 rounded-xl "
+                    >
+                        {/* <GrPrevious  />
+                        
+                        */}
+
+                        <img src={Prev} alt="logo" />
+                   
+                        {/* &#60; */}
+                    </button>
+
+                    <button
+                        onClick={() => {
+                            updateIndex(activeIndex + 1);
+                        }}
+                        className="bg-[#FEFEFF] shadow-2xl flex items-center justify-center w-14 h-14 p-3 rounded-xl "
+
+                    > 
+                        {/* <GrNext className="text-[#9BA6B2] icon " /> */}
+                      
+
+                        {/* &#62; */}
+
+
+                        <img src={Next} alt="logo" />
+                    </button>
+                </div>
+
+            </div>
+
+
+
             <div
                 className="inner"
                 style={{ transform: `translateX(-${activeIndex * 100}%)` }}
@@ -66,34 +123,7 @@ const Carousel = ({ children }: MyComponentProps) => {
                     return React.cloneElement(child, { width: "100%" });
                 })}
             </div>
-            <div className="indicators">
-                <button
-                    onClick={() => {
-                        updateIndex(activeIndex - 1);
-                    }}
-                >
-                    Prev
-                </button>
-                {React.Children.map(children, (child, index) => {
-                    return (
-                        <button
-                            className={`${index === activeIndex ? "active" : ""}`}
-                            onClick={() => {
-                                updateIndex(index);
-                            }}
-                        >
-                            {index + 1}
-                        </button>
-                    );
-                })}
-                <button
-                    onClick={() => {
-                        updateIndex(activeIndex + 1);
-                    }}
-                >
-                    Next
-                </button>
-            </div>
+
         </div>
     );
 };
