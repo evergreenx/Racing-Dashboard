@@ -1,8 +1,16 @@
+import CenterContent from "./CenterContent"
+import Header from "./Header"
 
 
 function index() {
     return (
-        <div className="w-full absolute text-white bg-black">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro quam possimus cupiditate unde, alias minima fugit doloribus, impedit recusandae repudiandae harum quisquam nesciunt aliquam inventore id veniam libero! Fugit, assumenda.</div>
+        <div className="w-screen h-full absolute pl-64 pt-40 text-red-200 ">
+            
+            <Header />
+
+<CenterContent />
+            </div>
+            
     )
 }
 

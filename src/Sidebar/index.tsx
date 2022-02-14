@@ -17,17 +17,25 @@ import { AiOutlineSetting } from "react-icons/ai";
 
 import "./Sidebar.css";
 import Topbar from "../Topbar";
+import Start from '../image/start.svg'
+import Drive from '../image/drive.svg'
 
 import ProfileImage from "../image/profile.png";
 
 export default function index() {
+
+    let data = [
+        { name: 'Start', icon: Start },
+        { name: 'Drive', icon: Drive },
+
+    ]
     return (
 
         <>
-            <div className="">
-                <Topbar />
-            </div>
-            <div className=" bg-[#FBFCFF] absolute w-40  sidebar h-screen border-r flex flex-col justify-around border-gray-300 px-10 py-5">
+
+            <Topbar />
+
+            <div className=" bg-[#FBFCFF] z-100 absolute w-40  sidebar h-screen border-r flex flex-col justify-around border-gray-300 px-10 py-5">
                 <div className="logo-container mb-5">
 
                     <img src={Logo} alt="logo" />
