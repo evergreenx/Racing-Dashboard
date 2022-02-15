@@ -23,7 +23,7 @@ export default function index() {
     }
 
     return (
-        <div className='w-full pl-72  bg-[#FBFCFF] absolute border-b py-5 flex justify-between items-center pr-14 '>
+        <div className='absolute w-full pl-72  bg-[#FBFCFF]  border-b py-5 flex justify-between items-center pr-14 z-100'>
 
             <div className="w-96 search-bar flex bg-white p-2 items-center border border-[#E7E7E7] rounded">
 

@@ -30,14 +30,14 @@ export default function Header() {
 
     ]
     return (
-        <div className='flex justify-around mb-20 '>
+        <div className='flex justify-around mb-20 w-full '>
 
 
             {
 
                 data.map((item, index) => {
                     return (
-                        <div className="  w-28 h-28 rounded-xl shadow-2xl flex flex-col  space-y-6  items-center justify-center " key={index}>
+                        <div className=" hover:shadow-[#3629B7]  w-28 h-28 rounded-xl shadow-2xl flex flex-col  space-y-6  items-center justify-center " key={index}>
                             <div> <img src={item.icon} className="w-7 h-7" alt="logo" /> </div>
                             <p className=" text-sm text-[#BCBDC2] font-bold">{item.name}</p>
                         </div>

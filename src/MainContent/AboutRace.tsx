@@ -36,7 +36,7 @@ export default function index() {
             {
                 data.map((item, index) => {
                     return (
-                        <div className="flex space-x-6  items-center my-10 " key={index}>
+                        <div className="flex space-x-6  items-center my-24 " key={index}>
                             <div> <img src={item.icon} className="w-16 h-16" alt="logo" /> </div>
 
                             <div className="text">

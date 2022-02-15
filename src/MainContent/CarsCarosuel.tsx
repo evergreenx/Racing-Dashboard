@@ -3,11 +3,33 @@ import Car from '../image/Car.png'
 
 export default function CarCarousel() {
     return (
-        <div className=" flex-1">
+        <div className=" ">
             <Carousel>
-                <CarouselItem>Item 1</CarouselItem>
-                <CarouselItem>Item 2</CarouselItem>
-                <CarouselItem>Item 3</CarouselItem>
+               
+            <CarouselItem>
+
+
+
+<img src={Car} alt="car" />
+                </CarouselItem> 
+                <CarouselItem>
+
+
+
+<img src={Car} alt="car" />
+                </CarouselItem> 
+                <CarouselItem>
+
+
+
+<img src={Car} alt="car" />
+                </CarouselItem>
+                 <CarouselItem>
+
+
+
+<img src={Car} alt="car" />
+                </CarouselItem>
             </Carousel>
         </div>
     );

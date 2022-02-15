@@ -31,11 +31,11 @@ export default function index() {
     ]
     return (
 
-        <>
+        <div  className="">
 
             <Topbar />
 
-            <div className=" bg-[#FBFCFF] z-100 absolute w-40  sidebar h-screen border-r flex flex-col justify-around border-gray-300 px-10 py-5">
+            <div className="fixed  bg-white z-100  w-40  sidebar h-screen border-r flex flex-col justify-around border-gray-300 px-10 py-5">
                 <div className="logo-container mb-5">
 
                     <img src={Logo} alt="logo" />
@@ -141,6 +141,6 @@ export default function index() {
 
                 </div>
             </div>
-        </>
+        </div>
     );
 }

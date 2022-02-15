@@ -4,7 +4,7 @@ import AboutRace from './AboutRace'
 
 export default function CenterContent() {
   return (
-    <div className='flex  '>
+    <div className='flex items-center justify-center '>
 
       <div className="flex-1 mr-20">
         <CarCarousel />
