@@ -9,10 +9,10 @@ import "./Carousel.css";
 
 
 
-type MyComponentProps = React.PropsWithChildren<{
+type MyComponentProps = {
     children: any,
     width: any
-}>;
+};
 
 export const CarouselItem = ({ children, width }: MyComponentProps) => {
     return (
