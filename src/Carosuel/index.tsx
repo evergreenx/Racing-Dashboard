@@ -11,12 +11,12 @@ import "./Carousel.css";
 
 type MyComponentProps = {
     children: any,
-    width: any
+
 };
 
-export const CarouselItem = ({ children, width }: MyComponentProps) => {
+export const CarouselItem = ({ children }: MyComponentProps) => {
     return (
-        <div className="carousel-item" style={{ width: width }}>
+        <div className="carousel-item" style={{}}>
             {children}
         </div>
     );
@@ -61,7 +61,7 @@ const Carousel = ({ children }: MyComponentProps) => {
             className="carousel p-3"
             onMouseEnter={() => setPaused(true)}
             onMouseLeave={() => setPaused(false)}
-           
+
         >
 
 

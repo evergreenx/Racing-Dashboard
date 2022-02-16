@@ -5,30 +5,30 @@ export default function CarCarousel() {
     return (
         <div className=" ">
             <Carousel>
-               
-            <CarouselItem>
 
-
-
-<img src={Car} alt="car" />
-                </CarouselItem> 
                 <CarouselItem>
 
 
 
-<img src={Car} alt="car" />
-                </CarouselItem> 
-                <CarouselItem>
-
-
-
-<img src={Car} alt="car" />
+                    <img src={Car} alt="car" />
                 </CarouselItem>
-                 <CarouselItem>
+                <CarouselItem>
 
 
 
-<img src={Car} alt="car" />
+                    <img src={Car} alt="car" />
+                </CarouselItem>
+                <CarouselItem>
+
+
+
+                    <img src={Car} alt="car" />
+                </CarouselItem>
+                <CarouselItem>
+
+
+
+                    <img src={Car} alt="car" />
                 </CarouselItem>
             </Carousel>
         </div>
